@@ -1,0 +1,31 @@
+import React from "react";
+import RecomandCard from "./RecomandCard";
+import {v4 as uuid} from "uuid";
+import { Consumer } from "../context";
+
+function Recomandations(props){
+ return(
+   <Consumer>
+     {
+       (value)=>{
+         const {recommend}=value;
+         return(
+
+          <div className="container-fluid">
+               <div className="row text-center flex-nowrap d-flex overflow-auto scroolbar">
+                { recommend.map((recommend)=>(
+                   <div key={uuid()} className="col-12 col-md-4 h-100">
+                     <RecomandCard recommend={recommend}/>
+                 </div>
+                 ))}
+               </div>
+         </div>
+             );
+       }
+     }
+   </Consumer>
+ )
+   
+}
+
+export default Recomandations;
