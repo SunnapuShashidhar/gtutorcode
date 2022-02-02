@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cproject() {
+function Javaproject() {
   return (
     <div className="container justify-content-center mt-5 pt-5">
     <div className="row d-flex flex-row">
@@ -8,17 +8,17 @@ function Cproject() {
     
         
       <button className="text-weight-light btn btn-info text-dark">
-      <a className='h2' className='h2' href="https://cpprogrames.blogspot.com/2019/12/history-of-c-language-year-introduced.html"style={{color:"black"}}>
-        History C</a>
+      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/data-structure.html"style={{color:"black"}}>
+        Jvm</a>
       </button><br />
       
       <button className="text-weight-light btn btn-primary"> 
       <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/algorithm-pseudopods-flow-chat.html"style={{color:"black"}}>
-        Algorithm</a>
+        Control Structures in Java</a>
       </button><br />
       
       <button className="text-weight-light btn btn-info"><a className='h2' href="https://cpprogrames.blogspot.com/2021/05/single-dimensional-array.html"style={{color:"black"}}>
-      Single Dim Array
+      Singlr dimensionalarray
       </a>
       </button><br />
       <button className="text-weight-light btn btn-primary">
@@ -40,7 +40,7 @@ function Cproject() {
       </button><br />
       <button className="text-weight-light btn btn-primary"> 
       <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/infix-to-postfix-converstion.html"style={{color:"black"}}>
-      looping statements</a>
+      lopping statements</a>
       </button><br />
     
       
@@ -50,4 +50,4 @@ function Cproject() {
   )
 }
 
-export default Cproject;
+export default Javaproject;

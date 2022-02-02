@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 import {Consumer} from "../context";
 import { Link } from 'react-router-dom';
 
@@ -9,17 +9,18 @@ function ProjectSection(){
         <Consumer>
             {
                 (value)=>{
-                    const {projects}=value;
+       
+            const {projects}=value;
                     return (
   
                     <div className="container my-5 shadow">
                      <div className="text-center text-align-center">
                           <h1 className="font-wight-light">
-                            C++ <span className="text-info">
-                            Tutorial
+                            My <span className="text-info">
+                            Project
                             </span>
                         </h1>
-                         <div className="lead">A section for cpp</div>
+                         <div className="lead">I buld project. Just like this website </div>
                         </div>
                            <div className="row my-5 pt-3">
                                 {
@@ -33,8 +34,8 @@ function ProjectSection(){
                            <div className="my-5">
                                <Link to="/AllProject" className="text-dark text-right" >
                                    <h5>
-                                       for more content
-                                <i className="fas fa-arrow-right align-middle py-5">
+                                       See my Project
+                                       <i className="fas fa-arrow-right align-middle py-5">
 
                                        </i>
                                    </h5>

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/SunnapuShashidhar/gtutor.git/static/js/main.e0245134.chunk.js",
+    "main.js.map": "/SunnapuShashidhar/gtutor.git/static/js/main.e0245134.chunk.js.map",
+    "runtime-main.js": "/SunnapuShashidhar/gtutor.git/static/js/runtime-main.fd3485d3.js",
+    "runtime-main.js.map": "/SunnapuShashidhar/gtutor.git/static/js/runtime-main.fd3485d3.js.map",
+    "static/css/2.291a9236.chunk.css": "/SunnapuShashidhar/gtutor.git/static/css/2.291a9236.chunk.css",
+    "static/js/2.43379b9c.chunk.js": "/SunnapuShashidhar/gtutor.git/static/js/2.43379b9c.chunk.js",
+    "static/js/2.43379b9c.chunk.js.map": "/SunnapuShashidhar/gtutor.git/static/js/2.43379b9c.chunk.js.map",
+    "static/js/3.7dd99f7c.chunk.js": "/SunnapuShashidhar/gtutor.git/static/js/3.7dd99f7c.chunk.js",
+    "static/js/3.7dd99f7c.chunk.js.map": "/SunnapuShashidhar/gtutor.git/static/js/3.7dd99f7c.chunk.js.map",
+    "index.html": "/SunnapuShashidhar/gtutor.git/index.html",
+    "static/css/2.291a9236.chunk.css.map": "/SunnapuShashidhar/gtutor.git/static/css/2.291a9236.chunk.css.map",
+    "static/js/2.43379b9c.chunk.js.LICENSE.txt": "/SunnapuShashidhar/gtutor.git/static/js/2.43379b9c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd3485d3.js",
+    "static/css/2.291a9236.chunk.css",
+    "static/js/2.43379b9c.chunk.js",
+    "static/js/main.e0245134.chunk.js"
+  ]
+}

@@ -13,9 +13,21 @@ function Community(props) {
         <div className="lead">This community help you in solving of your doubts.</div>
        </div>
           <div className="row my-5 pt-3">          
-                       <div className="col-md-4 col-12">
+                       <div className="col-md-6 col-12">
+                       <div className="card shadow h-100%">
+           <div className="card-body">
+              <h4 className="card-title">Difference between C and C++</h4>
+              <Link to="/ask-a-solution" className="text-dark text-right" >
+              <button className="btn btn-success float-right float-bottom">
+                Provide me solution
+                </button></Link>
+              
+            </div> 
+        </div>
+                       </div>   
+                       <div className="col-md-6 col-12">
                         
-                       </div>      
+                        </div>    
               
           </div> 
         

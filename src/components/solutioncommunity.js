@@ -4,11 +4,11 @@ import "easymde/dist/easymde.min.css";
 import { Consumer } from '../context';
 import {v4 as uuid} from 'uuid';
 
- class QuestionCommunity extends Component {
+ class SolutionCommunity extends Component {
      state={
         id:"",
-         question:"",
-         questionDescription:"",
+         solution:"",
+         solutionDescription:"",
          submitMessage:"",
          submitMessageTextColor:"",
      };
@@ -19,7 +19,7 @@ import {v4 as uuid} from 'uuid';
      };
      onBodyChange=(value)=>{
          this.setState({
-             questionDescription:value,
+             solutionDescription:value,
          })
      };
      onSubmit=(handler,event)=>{
@@ -31,22 +31,22 @@ import {v4 as uuid} from 'uuid';
             
         
 
-         const newQuestion={
+         const newsolution={
             id:uuid(),
-            question:this.state.question,
-            questionDescription:this.state.questionDescription,
+            solution:this.state.solution,
+            solutionDescription:this.state.solutionDescription,
         };
-        handler("ADD_Question",newQuestion);
+        handler("ADD_solution",newsolution);
      }
     render() {
         return(
             <Consumer>
                 {(value)=>{
-                    const {id,questionDescription,submitMessageTextColor,submitMessage}=this.state;
+                    const {id,solutionDescription,submitMessageTextColor,submitMessage}=this.state;
                     const {handler}=value;
                      return (
                         <div className="container pt-5 mt-5">
-                            <h1 className="font-weight-light text-center"><span className="text-info">Post</span> Your question</h1>
+                            <h1 className="font-weight-light text-center"><span className="text-info">Post</span> Your solution</h1>
                                 
                                     <form onSubmit={this.onSubmit.bind(this,handler)}>
                                     <div className="form-group">
@@ -58,17 +58,17 @@ import {v4 as uuid} from 'uuid';
                             <input type="email"name="email"className="form-control"onChange={this.onChange}/>
                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="question">question*</label>
+                                            <label htmlFor="solution">solution*</label>
                                             <input 
                                             type="text"
-                                            id="question"
+                                            id="solution"
                                             name="qestion"
                                             className="form-control"
                                             onChange={this.onChange}
                                             required />
                                         </div>
                                         <SimpleMDE
-                      onChange={this.onquestionDescriptionChange}
+                      onChange={this.onsolutionDescriptionChange}
                   
                     />
                                         <button type="submit" className="btn btn-dark btn-block text-center my-5"style={{backgroundColor:"black"}}>Post</button>
@@ -84,4 +84,4 @@ import {v4 as uuid} from 'uuid';
        
     }
 }
-export default QuestionCommunity;
+export default SolutionCommunity;

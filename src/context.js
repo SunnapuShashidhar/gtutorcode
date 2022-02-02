@@ -36,6 +36,10 @@ export class Provider extends Component {
                         cs:[newObject,...this.state.cs]
                     })
                 break;
+                case "ADD_solution":
+                    this.setState({
+                        cs:[newObject,...this.state.communitySol]
+                    })
             default:
                 break;
         }
@@ -47,43 +51,53 @@ export class Provider extends Component {
         recommend:[
             {
                 id: 1,
-                name: "Random",
-                company: "ABC company",
-                designation: "CEO",
-                message: "He is a good engineer ",
+                name: "M.Kiran kumar",
+                company: "GGC",
+                designation: "Lecturer",
+                email:"kirankpmsc@gmail.com",
+                message: "Smooth interface with good content",
               },
               {
                 id: 2,
-                name: "Random guy 2",
-                company: "ABC company",
-                designation: "Director",
-                message: "He is a lazy person",
+                name: "P.Vivek",
+                company: "GGC",
+                designation: "Lecturer",
+                email:"vivekladdu007@gmail.com",
+                message: "Navigation between pages are to good",
+              },
+              {
+                id: 3,
+                name: "CH.Keerthi",
+                company: "GGC",
+                designation: "Lecturer",
+                email:"keerthi140m@gmail.com",
+                message: "Excellent Content",
               },
         ],
         communityQue:[],
+        communitySol:[],
         projects:[
+       
             {
-                id:2,
-                title:"Oops Concept",
-                imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
-                except:"This is my project about ......",
-                body:"body-2",
-             },
-        ],
-        cs:[
-            {
-                id:3,
-                title:"Oops Concept",
-                imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
-                except:"This is my project about ......",
-                body:"body-2",
-             },
+             id:2,
+             title:"projects-2",
+             imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+             excerpt:"This is my project about ......",
+             body:"body-2",
+          },
+         {
+             id:3,
+             title:"projects-3",
+             imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
+             excerpt:"This is my project about ......",
+             body:"body-3",
+         },
         ],
 
     }
     async componentDidMount()
     {
-        const [responseProject,responceC]=await Promise.all([axios.get("http://127.0.0.1:8000/api/cpp"),axios.get("http://127.0.0.1:8000/api/c")])
+        const [responseProject,responceC]=await Promise.all([axios.get("http://127.0.0.1:8000/api/addproject"),axios.get("http://127.0.0.1:8000/api/c")])
         const newState={};
         newState.projects=responseProject.data.results;
         newState.cs=responceC.data.results;

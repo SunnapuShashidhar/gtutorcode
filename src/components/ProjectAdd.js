@@ -36,9 +36,10 @@ class ProjectAdd extends Component {
         body:this.state.body,
     };
     
-        const responce=await axios.post("http://127.0.0.1:9000/api/project/add",newProject)
+        const responce=await axios.post("http://127.0.0.1:8000/api/project/add",newProject)
        
         const isSuccessful=responce.data.isSuccessful;
+    
         if (isSuccessful){
             this.setState({
                 submitMessage:`Project published successfully`,

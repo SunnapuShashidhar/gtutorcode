@@ -12,7 +12,7 @@ CORS(app)
 app.config['MYSQL_HOST']='localhost'
 app.config['MYSQL_USER']='root'
 app.config['MYSQL_PASSWORD']='Sunnapu@45'
-app.config['MYSQL_DB']='myportfolio'
+app.config['MYSQL_DB']='tutor'
 app.config['autocommite']=True
 mysql =MySQL(app)
 
@@ -139,3 +139,29 @@ def cpp_by_id():
          return {"isSuccessful":True,"result":cpp_obj}
     except:
         return {"isSuccessful":False}
+@app.route("/api/addproject", methods=["POST","GET"])
+def add_project():
+    try:
+        cur=mysql.connection.cursor()
+        project = request.json
+        print(project)
+        # SQL query
+        query = "INSERT INTO projects VALUES(%s, %s, %s, %s, %s, %s, %s);"
+
+        cur.execute(
+            query,
+            [
+                project["id"],
+                project["imageUrl"],
+                project["title"],
+                project["excerpt"],
+                project["body"],
+                True,
+                datetime.datetime.now(),
+            ],
+        )
+        return {"isSuccessful": True}
+    except Exception as e:
+        logging.error(e)
+        return {"isSuccessful": False}
+

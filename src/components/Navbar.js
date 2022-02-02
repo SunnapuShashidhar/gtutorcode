@@ -1,19 +1,20 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
+import Logo from "../assites/Logo.jpg"
 function Navbar(props){
 
  
     return(
-        <nav className="navbar navbar-expand-sm fixed-top bg-dark">
-        <div className="container my-2">
-          <Link to="/" className="navbar-brand text-white font-weight-bold">
-            
-          GTutor
+        <nav className="navbar navbar-expand-sm stick-top bg-dark">
+        <div className="container d-flex flex-row">
+          <span>
+          <Link to="/" className="navbar-brand"> 
+          <img className="rounded-circle w-25 float-left" src={Logo} alt="" />
            </Link>
+          </span>
+    
            <Link to="/blogs" className="ml-auto">
-          <button className="btn btn-outline-info mr-1">
+          <button className="btn btn-outline-primary mr-1">
             Blogs
            </button>
            </Link>
@@ -35,6 +36,15 @@ function Navbar(props){
              </Link>
              <Link to="/login" className="nav-item nav-link text-warning h6 mx-3">
                Login
+             </Link>
+             <Link to="/project/add" className="nav-item nav-link text-warning h6 mx-3">
+               Add Projects
+             </Link>
+             <a href="https://www.onlinegdb.com/online_c_compiler" className="nav-item nav-link text-warning h6 mx-3">
+               Compiler
+             </a>
+             <Link to="/request" className="nav-item nav-link text-warning h6 mx-3">
+               request
              </Link>
             </div>
            </div> 
