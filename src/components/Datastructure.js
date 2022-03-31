@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 function Datastructure() {
   return (
-    <div className="container justify-content-center mt-5 pt-5">
+    <div className="container justify-content-center pt-5">
         <div className="row d-flex flex-row">
           <div className="col-md-6 d-flex flex-column">
         

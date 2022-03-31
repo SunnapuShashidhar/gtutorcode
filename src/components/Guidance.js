@@ -2,7 +2,7 @@ import React from 'react'
 
 function Guidance() {
   return (
-    <div className='Container py-5 my-5 font-weight-bold h4 justify-content-center'>
+    <div className='Container font-weight-bold h4 justify-content-center'>
        <h1 className="font-wight-light mx-5 px-5">
            <span className="text-info">
            Guidelines 

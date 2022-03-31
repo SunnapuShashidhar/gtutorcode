@@ -34,7 +34,7 @@ function App() {
         <ScrollToTop/>
         <Switch>
         <Route exact path="/register" component={Register}/>
-         <Route exact path="/" component={Homepage}/>
+         <Route path="/" component={Homepage}/>
          <Route exact path="/write-a-recomandation" component={WriteaRecommendation}/>
          <Route exact path="/recommendations" component={Recomandations}/>
          <Route exact path="/community"component={Community}/>

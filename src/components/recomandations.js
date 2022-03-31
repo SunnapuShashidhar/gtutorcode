@@ -15,7 +15,7 @@ function Recomandations(props){
                <div className="row text-center flex-nowrap d-flex overflow-auto scroolbar">
                 { recommend.map((recommend)=>(
                    <div key={uuid()} className="col-12 col-md-4">
-                     <RecomandCard recommend={recommend} style={{"height":"100%"}}/>
+                     <RecomandCard recommend={recommend}/>
                  </div>
                  ))}
                </div>

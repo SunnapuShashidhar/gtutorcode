@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Blogs() {
   return (
-    <div className="jumbotrons justify-content-center mt-5 pt-5 ml-5">
+    <div className="jumbotrons justify-content-center pt-1 ml-5">
         <div className="row d-flex flex-row-right">
           <div className="col-12 col-md-6 d-flex flex-column">
           <Link to="/Cproject">
