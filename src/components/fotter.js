@@ -25,25 +25,24 @@ function Fotter() {
           </div>
           <div className="col-12 col-md-4 text-justify py-3">
             <p>
-              We are team of students from Government Girraj college
+              We are team of students from Government Girraj college(A),
               Nizamabad.This is our project named "GTutor(GGC CS E-CONTENT
-              HUB)". Aim of the project is to maintain smart notes Hub. There
-              exist many online tutors but they don’t provide all concept at one
+              HUB with live lab interaction)".Aim of the project is to providing smart notes,e-lab,vidoes,etc..,. There exist many online tutors but they don’t provide all concept at one
               site where our smart notes hub provides all concepts related to
               our Academic wise syllabus of our college and general concept.
             </p>
           </div>
           <div className="col-12 col-md-4">
             <h5 className="text-info pb-3">Social</h5>
-            <Link to="/">
+            <a href="https://www.linkedin.com/in/shashidhar-sunnapu-46147521a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlT3N9bXtSsyF%2Fd0YlQkonw%3D%3D">
               <i className="fab fa-linkedin text-light h1 d-block"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://github.com/SunnapuShashidhar/myportfolio.git">
               <i className="fab fa-github text-light h1 d-block"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://www.gmail.com/gtutornzb@gmail.com">
               <i className="fas fa-envelope text-light h1 d-block"></i>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

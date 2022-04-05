@@ -3,7 +3,7 @@ import React from 'react'
 function Guidance() {
   return (
     <div className='Container font-weight-bold h4 justify-content-center'>
-       <h1 className="font-wight-light mx-5 px-5">
+       <h1 className="font-wight-light mx-auto">
            <span className="text-info">
            Guidelines 
            </span> To User Our website
@@ -14,9 +14,9 @@ function Guidance() {
   
     <br />
       
-        Registraction is not recured for Blogs and Compiler sections.It Meanes user can read and perform the labs without registraction.
+        Registration is not recured for using Blogs and Compiler sections.It Meanes user can read and perform the labs without registraction.
       <br />
-      for community,Add Projects,Write-a-recommendations Registraction is recured.
+      for community,Add Projects,Write-a-recommendations Registration is required.
         </div>
   
       </div>

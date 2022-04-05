@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/SunnapuShashidhar/Gtutor.git/static/js/main.b85c497b.chunk.js",
-    "main.js.map": "/SunnapuShashidhar/Gtutor.git/static/js/main.b85c497b.chunk.js.map",
-    "runtime-main.js": "/SunnapuShashidhar/Gtutor.git/static/js/runtime-main.47504ed5.js",
-    "runtime-main.js.map": "/SunnapuShashidhar/Gtutor.git/static/js/runtime-main.47504ed5.js.map",
-    "static/css/2.291a9236.chunk.css": "/SunnapuShashidhar/Gtutor.git/static/css/2.291a9236.chunk.css",
-    "static/js/2.43379b9c.chunk.js": "/SunnapuShashidhar/Gtutor.git/static/js/2.43379b9c.chunk.js",
-    "static/js/2.43379b9c.chunk.js.map": "/SunnapuShashidhar/Gtutor.git/static/js/2.43379b9c.chunk.js.map",
-    "static/js/3.7dd99f7c.chunk.js": "/SunnapuShashidhar/Gtutor.git/static/js/3.7dd99f7c.chunk.js",
-    "static/js/3.7dd99f7c.chunk.js.map": "/SunnapuShashidhar/Gtutor.git/static/js/3.7dd99f7c.chunk.js.map",
-    "index.html": "/SunnapuShashidhar/Gtutor.git/index.html",
-    "static/css/2.291a9236.chunk.css.map": "/SunnapuShashidhar/Gtutor.git/static/css/2.291a9236.chunk.css.map",
-    "static/js/2.43379b9c.chunk.js.LICENSE.txt": "/SunnapuShashidhar/Gtutor.git/static/js/2.43379b9c.chunk.js.LICENSE.txt",
-    "static/media/Logo.49d4e171.jpg": "/SunnapuShashidhar/Gtutor.git/static/media/Logo.49d4e171.jpg",
-    "static/media/Titleimg.045fd08c.jpg": "/SunnapuShashidhar/Gtutor.git/static/media/Titleimg.045fd08c.jpg"
+    "main.js": "/static/js/main.d1d605f1.chunk.js",
+    "main.js.map": "/static/js/main.d1d605f1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.30e980ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.30e980ba.js.map",
+    "static/css/2.291a9236.chunk.css": "/static/css/2.291a9236.chunk.css",
+    "static/js/2.19e044eb.chunk.js": "/static/js/2.19e044eb.chunk.js",
+    "static/js/2.19e044eb.chunk.js.map": "/static/js/2.19e044eb.chunk.js.map",
+    "static/js/3.7dd99f7c.chunk.js": "/static/js/3.7dd99f7c.chunk.js",
+    "static/js/3.7dd99f7c.chunk.js.map": "/static/js/3.7dd99f7c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.291a9236.chunk.css.map": "/static/css/2.291a9236.chunk.css.map",
+    "static/js/2.19e044eb.chunk.js.LICENSE.txt": "/static/js/2.19e044eb.chunk.js.LICENSE.txt",
+    "static/media/Logo.49d4e171.jpg": "/static/media/Logo.49d4e171.jpg",
+    "static/media/Titleimg.045fd08c.jpg": "/static/media/Titleimg.045fd08c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.47504ed5.js",
+    "static/js/runtime-main.30e980ba.js",
     "static/css/2.291a9236.chunk.css",
-    "static/js/2.43379b9c.chunk.js",
-    "static/js/main.b85c497b.chunk.js"
+    "static/js/2.19e044eb.chunk.js",
+    "static/js/main.d1d605f1.chunk.js"
   ]
 }

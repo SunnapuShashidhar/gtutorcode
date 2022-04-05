@@ -27,13 +27,13 @@ import { Consumer } from '../context';
             name:this.state.name,
             password:this.state.password,
         };
-       // const responce=await axios.post("http://127.0.0.1:8000/register",newRegister)
+        //const responce=await axios.post("http://127.0.0.1:8000/register",newRegister)
         //let isSuccessful=responce.data.isSuccessful;
-        let isSuccessful=true
+        let isSuccessful=true;
         const {name}=this.state;
         if (isSuccessful){
             this.setState({
-                submitMessage:`Thanks ${name} . Your succeswsfully Register `,
+                submitMessage:`Thanks ${name} . Your successfully Register `,
                 submitMessageTextColor:"text-info",
             });
            

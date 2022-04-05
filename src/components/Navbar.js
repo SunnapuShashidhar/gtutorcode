@@ -19,12 +19,12 @@ function Navbar(props){
            </button>
            </Link>
           <button 
-          className="navbar-toggler " 
+          className="navbar-toggler" 
           data-toggle="collapse"
           data-target="#collapseNav"
           title='click on me'
           >
-           <i className="fas fa-bar text-warning info-primary"></i>
+           <i className="fas fa-bars text-warning info-primary"></i>
           </button>
           <div className="collapse navbar-collapse flex-grow-0" id="collapseNav" style={{alignItems:"right"}}>
            <div className="navbar-nav">
@@ -43,6 +43,8 @@ function Navbar(props){
              <a href="https://www.onlinegdb.com/online_c_compiler" className="nav-item nav-link text-warning h6 mx-3">
                Compiler
              </a>
+
+            
           
             </div>
            </div> 

@@ -25,7 +25,7 @@ import {v4 as uuid} from 'uuid';
      onSubmit=(handler,event)=>{
          event.preventDefault();
                this.setState({
-                submitMessage:"Your query is Posted",
+                submitMessage:"Your query redirected to the data adminstater",
                 submitMessageTextColor:"text-info",
              });
             
@@ -51,11 +51,11 @@ import {v4 as uuid} from 'uuid';
                                     <form onSubmit={this.onSubmit.bind(this,handler)}>
                                     <div className="form-group">
                             <label htmlFor="name">Name*</label>
-                            <input type="text"name="name"className="form-control"onChange={this.onChange}/>
+                            <input type="text"name="name"className="form-control"onChange={this.onChange} required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email*</label>
-                            <input type="email"name="email"className="form-control"onChange={this.onChange}/>
+                            <input type="email"name="email"className="form-control"onChange={this.onChange}required/>
                         </div>
                                         <div className="form-group">
                                             <label htmlFor="question">question*</label>

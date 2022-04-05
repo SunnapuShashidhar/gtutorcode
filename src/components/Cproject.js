@@ -1,53 +1,82 @@
-import React from 'react'
-
-function Cproject() { 
+import React from "react";
+import { saveAs } from "file-saver";
+import { Link } from "react-router-dom";
+function Cproject() {
+  const saveFile = () => {
+    saveAs(
+      "https://docs.google.com/document/d/16bY3J7SI8ixgJkPNHGiGm84g3LuPSRx2/edit?usp=drivesdk&ouid=116726111695977519271&rtpof=true&sd=true",
+      "C.pdf"
+    );
+  };
   return (
     <div className="container justify-content-center pt-5">
-    <div className="row d-flex flex-row">
-      <div className="col-md-6 d-flex flex-column">
-    
-        
-      <button className="text-weight-light btn btn-info text-dark">
-      <a className='h2' className='h2' href="https://cpprogrames.blogspot.com/2019/12/history-of-c-language-year-introduced.html"style={{color:"black"}}>
-        History C</a>
-      </button><br />
-      
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/algorithm-pseudopods-flow-chat.html"style={{color:"black"}}>
-        Algorithm</a>
-      </button><br />
-      
-      <button className="text-weight-light btn btn-info"><a className='h2' href="https://cpprogrames.blogspot.com/2021/05/single-dimensional-array.html"style={{color:"black"}}>
-      Single Dim Array
-      </a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary">
-       <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/two-dimensional-array.html"style={{color:"black"}}> Two dim Array </a>
-      </button><br />
-      </div>
-      <div className="col-md-6 d-flex flex-column">
-      <button className="text-weight-light btn btn-info"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/multi-dimensional-array.html"style={{color:"black"}}>
-        Multi-dim Array</a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/stack.html"style={{color:"black"}}>
-        String handling functions</a>
-      </button><br />
-      <button className="text-weight-light btn btn-info"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/algorithm-pseudopods-flow-chat.html"style={{color:"black"}}>
-        Control statements</a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/infix-to-postfix-converstion.html"style={{color:"black"}}>
-      looping statements</a>
-      </button><br />
-    
-      
+      <div className="row d-flex flex-row">
+        <div className="col-md-6 d-flex flex-column">
+          <Link to="/historyofC">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>History C</h2>
+            </button>
+          </Link>
+          <br />
+
+          <Link to="/algorithm">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Algorithm</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/singledimarray">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Single Dim Array</h2>
+            </button>
+          </Link>
+  
+          <br />
+          <Link to="/singledimarray">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Two dim Array</h2>
+            </button>
+          </Link>
+          
+          <br />
+        </div>
+         
+        <div className="col-md-6 d-flex flex-column">
+        <Link to="/multdimarray">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Multi-dim Array</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/stringhandling">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>String handling functions</h2>
+            </button>
+          </Link>
+          
+          <br />
+          <Link to="/looping">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Looping</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/controlstatements">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Control statements</h2>
+            </button>
+          </Link>
+          <br />
+        </div>
+        <button
+          className="btn btn-primary h3 text-dark font-weight-bold w-50 mx-auto my-2"
+          onClick={saveFile}
+        >
+          Downloadable content
+        </button>
       </div>
     </div>
-</div>
-  )
+  );
 }
 
 export default Cproject;

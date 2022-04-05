@@ -24,9 +24,9 @@ class Login extends Component {
            email:this.state.email,
            password:this.state.password,
        };
-       const responce=await axios.post("http://127.0.0.1:8000/login",newLogin)
-       let isSuccessful=responce.data.isSuccessful;
-       
+      // const responce=await axios.post("http://127.0.0.1:8000/login",newLogin)
+       //let isSuccessful=responce.data.isSuccessful;
+       let isSuccessful=true;
        
        if (isSuccessful){
            this.setState({
@@ -78,7 +78,13 @@ class Login extends Component {
                                         <input className='text-warning' type="checkbox" value="remember-me"/> 
                                     </label>
                                 </div>
-                                <button className="w-100 btn btn-lg btn-light" type="submit">Sign in</button>
+                                <button className="w-100 btn btn-lg btn-light" type="submit"onClick="Thanks alot!. Your succeswsfully Login">Sign in</button>
+                                <br />
+                                    [or]
+                                <br />
+                                <a href="" className='text-dark mx-auto'>
+                                    forgot password
+                                </a>
                                 <p className="mt-5 mb-3 text-dark">&copy; 2019-2022</p>
                             </form>
                             </div>

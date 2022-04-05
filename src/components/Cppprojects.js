@@ -1,52 +1,85 @@
 import React from 'react'
-
+import {saveAs} from "file-saver"
+import {Link} from "react-router-dom"
 function Cppproject() {
+  const saveFile = () => {
+      
+  
+    saveAs(
+      "https://drive.google.com/file/d/1_XF6bLSAonXqmCadl8X6a6hP216qY_Tw/view?usp=drivesdk",
+      "datastructure.pdf"
+    );
+  
+
+};
   return (
     <div className="container justify-content-center pt-5">
-    <div className="row d-flex flex-row">
-      <div className="col-md-6 d-flex flex-column">
-    
-        
-      <button className="text-weight-light btn btn-info text-dark">
-      <a className='h2' className='h2' href="https://cpprogrames.blogspot.com/2021/05/data-structure.html"style={{color:"black"}}>
-        History C++</a>
-      </button><br />
-      
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/algorithm-pseudopods-flow-chat.html"style={{color:"black"}}>
-        Algorithm</a>
-      </button><br />
-      
-      <button className="text-weight-light btn btn-info"><a className='h2' href="https://cpprogrames.blogspot.com/2021/05/single-dimensional-array.html"style={{color:"black"}}>
-      Single Dim Array
-      </a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary">
-       <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/two-dimensional-array.html"style={{color:"black"}}> Two dim Array </a>
-      </button><br />
-      </div>
-      <div className="col-md-6 d-flex flex-column">
-      <button className="text-weight-light btn btn-info"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/multi-dimensional-array.html"style={{color:"black"}}>
-        Multi-dim Array</a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/stack.html"style={{color:"black"}}>
-        String handling functions</a>
-      </button><br />
-      <button className="text-weight-light btn btn-info"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/algorithm-pseudopods-flow-chat.html"style={{color:"black"}}>
-        Control statements</a>
-      </button><br />
-      <button className="text-weight-light btn btn-primary"> 
-      <a className='h2' href="https://cpprogrames.blogspot.com/2021/05/infix-to-postfix-converstion.html"style={{color:"black"}}>
-      lopping statements</a>
-      </button><br />
-    
-      
+      <div className="row d-flex flex-row">
+        <div className="col-md-6 d-flex flex-column">
+          <Link to="/constructure">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Constructor</h2>
+            </button>
+          </Link>
+          <br />
+
+          <Link to="/datatypes">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>datatypes</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/difference">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Differences b/w C and C++</h2>
+            </button>
+          </Link>
+  
+          <br />
+          <Link to="/oops">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Oops </h2>
+            </button>
+          </Link>
+          
+          <br />
+        </div>
+         
+        <div className="col-md-6 d-flex flex-column">
+        <Link to="/operators">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Operators</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/passbyvalue">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Pass by value and Reference</h2>
+            </button>
+          </Link>
+          
+          <br />
+          <Link to="/scope">
+            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Scope resolution operator</h2>
+            </button>
+          </Link>
+          <br />
+          <Link to="/Typecasting">
+            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
+              <h2 style={{ color: "black" }}>Type casting</h2>
+            </button>
+          </Link>
+          <br />
+        </div>
+        <button
+          className="btn btn-primary h3 text-dark font-weight-bold w-50 mx-auto my-2"
+          onClick={saveFile}
+        >
+          Downloadable content
+        </button>
       </div>
     </div>
-</div>
   )
 }
 
