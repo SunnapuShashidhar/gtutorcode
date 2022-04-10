@@ -30,7 +30,7 @@ class Login extends Component {
        
        if (isSuccessful){
            this.setState({
-               submitMessage:`Thanks alot!. Your succeswsfully Login `,
+               submitMessage:`Thanks alot!. Your successfully Login `,
                submitMessageTextColor:"text-info",
            });
           

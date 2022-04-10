@@ -37,7 +37,7 @@ import { Consumer } from '../context';
         const {name}=this.state;
         if (isSuccessful){
             this.setState({
-                submitMessage:`Thanks ${name} . I will contact you soon`,
+                submitMessage:`Thanks ${name} .our team will contact you soon`,
                 submitMessageTextColor:"text-info",
             });
            
@@ -69,24 +69,24 @@ import { Consumer } from '../context';
                          <form onSubmit={this.onSubmit.bind(this,handler)}>
                         <div className="form-group">
                             <label htmlFor="name">Name*</label>
-                            <input type="text"name="name"className="form-control"onChange={this.onChange}/>
+                            <input type="text"name="name"className="form-control"onChange={this.onChange}required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email*</label>
-                            <input type="email"name="email"className="form-control"onChange={this.onChange}/>
+                            <input type="email"name="email"className="form-control"onChange={this.onChange}required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="company">Company/institution</label>
-                            <input type="text"name="company"className="form-control"onChange={this.onChange}/>
+                            <input type="text"name="company"className="form-control"onChange={this.onChange}required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="designation">Designation</label>
-                            <input type="text"name="designation"className="form-control"onChange={this.onChange}/>
+                            <input type="text"name="designation"className="form-control"onChange={this.onChange}required/>
                         </div>
                         <label htmlFor="RecommendationsMessage">Recommendation</label>
-                        <textarea className="form-control" row="5"name="RecommendationsMessage"className="form-control"onChange={this.onChange}/>
+                        <textarea className="form-control" row="5"name="RecommendationsMessage"onChange={this.onChange}required/>
                         <button type="submit"className="btn btn-danger float-right"style={{backgroundColor:"red"}}>
-                        Let's of Love!
+                        Lot's of Love!
                         </button>
                         </form>
                               </div>

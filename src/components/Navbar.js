@@ -43,7 +43,9 @@ function Navbar(props){
              <a href="https://www.onlinegdb.com/online_c_compiler" className="nav-item nav-link text-warning h6 mx-3">
                Compiler
              </a>
-
+              <Link to="/downlable" className='nav-item nav-link text-warning h6 mx-3'>
+                Downloads
+              </Link>
             
           
             </div>

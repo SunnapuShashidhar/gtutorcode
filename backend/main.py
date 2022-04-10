@@ -165,3 +165,28 @@ def add_project():
         logging.error(e)
         return {"isSuccessful": False}
 
+@app.route("/api/recommendations", methods=["GET"])
+def get_recommendations():
+    try:
+        cur=mysql.connection.cursor()
+        query = "SELECT * FROM recommendations WHERE onShowcase=True;"
+        cur.execute(query)
+        recommendations = cur.fetchall()
+        results = []
+        for recommendation in recommendations:
+            recommendations_obj = {
+                "id": recommendation[0],
+                "name": recommendation[1],
+                "email":recommendation[2],
+                "company": recommendation[3],
+                "designation": recommendation[4],
+                "onShowcase":recommendation[5],
+                "message": recommendation[6],
+            }
+            results.append(recommendations_obj)
+        cur.close()
+        return {"isSuccessful": True, "results": results}
+    except Exception as e:
+        logging.error(e)
+        return {"isSuccessful": True, "results": []}
+

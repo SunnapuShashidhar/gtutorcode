@@ -1,17 +1,7 @@
 import React from 'react'
-import {saveAs} from "file-saver"
 import {Link} from "react-router-dom"
 function Cppproject() {
-  const saveFile = () => {
-      
   
-    saveAs(
-      "https://drive.google.com/file/d/1_XF6bLSAonXqmCadl8X6a6hP216qY_Tw/view?usp=drivesdk",
-      "datastructure.pdf"
-    );
-  
-
-};
   return (
     <div className="container justify-content-center pt-5">
       <div className="row d-flex flex-row">
@@ -72,12 +62,13 @@ function Cppproject() {
           </Link>
           <br />
         </div>
-        <button
-          className="btn btn-primary h3 text-dark font-weight-bold w-50 mx-auto my-2"
-          onClick={saveFile}
-        >
-          Downloadable content
-        </button>
+        <div className="col-12 w-50 col-md-6 w-100 mx-auto mb-2">
+        <a href="Javanote.pdf">
+            <button className="h-2 btn btn-success text-light w-100 text-weight-light">
+              <h2 style={{ color: "white" }}>C++ notes</h2>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   )

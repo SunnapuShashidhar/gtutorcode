@@ -1,13 +1,7 @@
 import React from 'react'
-import {saveAs} from "file-saver"
 import {Link} from "react-router-dom"
 function Javaproject() {
-  const saveFile = () => {
-    saveAs(
-      "https://docs.google.com/document/d/1ei1RjMiA1FtBnlRJCC_-YucfKeI_Ht4t/edit?usp=drivesdk&ouid=116726111695977519271&rtpof=true&sd=true",
-      "java.pdf"
-    );
-};
+
   return (
     <div className="container justify-content-center pt-5">
       <div className="row d-flex flex-row">
@@ -57,7 +51,7 @@ function Javaproject() {
           <br />
           <Link to="/stringhandlingjava">
             <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>String handling fnctions</h2>
+              <h2 style={{ color: "black" }}>String handling functions</h2>
             </button>
           </Link>
           <br />
@@ -68,13 +62,17 @@ function Javaproject() {
           </Link>
           <br />
         </div>
-        <button
-          className="btn btn-primary h3 text-dark font-weight-bold w-50 mx-auto my-2"
-          onClick={saveFile}
-        >
-          Downloadable content
-        </button>
+        <div className="col-12 w-50 col-md-6 w-100 mx-auto mb-2">
+        <a href="Javanote.pdf">
+            <button className="h-2 btn btn-success text-light w-100 text-weight-light">
+              <h2 style={{ color: "white" }}>Java notes</h2>
+            </button>
+          </a>
+        </div>
+        
+       
       </div>
+      
     </div>
   )
 }

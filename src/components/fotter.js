@@ -40,7 +40,7 @@ function Fotter() {
             <a href="https://github.com/SunnapuShashidhar/myportfolio.git">
               <i className="fab fa-github text-light h1 d-block"></i>
             </a>
-            <a href="https://www.gmail.com/gtutornzb@gmail.com">
+            <a href="mailto:gtutornzb@gmail.com">
               <i className="fas fa-envelope text-light h1 d-block"></i>
             </a>
           </div>

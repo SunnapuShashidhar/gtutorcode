@@ -7,7 +7,6 @@ import ScrollToTop from './components/ScrollToTop';
 import { Provider } from './context';
 import WriteaRecommendation from './components/WriteaRecommendation';
 import Homepage from './components/Homepage';
-
 import QuestionCommunity from './components/QuestionCommunity';
 import Community from './components/Community';
 import Login from './components/Login';
@@ -55,8 +54,11 @@ import Datatypesjava from "./components/Java/Datatypesjava"
 import Constructuresjava from "./components/Java/Constructuresjava"
 import Operatorsjava from "./components/Java/Operatorsjava"
 import Stringhandingjava from './components/Java/Stringhandingjava';
-
-
+import Cnotes from "./components/CConcepts/Cnotes"
+import Downlable from './components/Downlable';
+import Cppnotes from './components/Cppnotes';
+import Datastru from './components/Datastru';
+import Javanotes from './components/Javanotes';
 function App() {
   return (<Provider>
  <HashRouter basename='/'>
@@ -113,6 +115,13 @@ function App() {
         <Route exact path="/multithread" component={Multithreding}/>
         <Route exact path="/constructurejava"component={Constructuresjava}/>
         <Route exact path="/paramtag" component={Paramtag}/>
+        /**notes */
+        <Route exact path="/cnotes" component={Cnotes}/>
+        <Route exact path="/cppnotes" components={Cppnotes}/>
+        <Route exact path="/jnotes" components={Javanotes}/>
+        <Route exact path="/datastruc" component={Datastru}/>
+        /**download */
+        <Route exact path="/downlable" component={Downlable}/>
          <Route component={NotFound}/>
        </Switch>
      

@@ -1,13 +1,6 @@
 import React from "react";
-import { saveAs } from "file-saver";
 import { Link } from "react-router-dom";
 function Cproject() {
-  const saveFile = () => {
-    saveAs(
-      "https://docs.google.com/document/d/16bY3J7SI8ixgJkPNHGiGm84g3LuPSRx2/edit?usp=drivesdk&ouid=116726111695977519271&rtpof=true&sd=true",
-      "C.pdf"
-    );
-  };
   return (
     <div className="container justify-content-center pt-5">
       <div className="row d-flex flex-row">
@@ -48,7 +41,7 @@ function Cproject() {
             </button>
           </Link>
           <br />
-          <Link to="/stringhandling">
+          <Link to="/stringhandlingjava">
             <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
               <h2 style={{ color: "black" }}>String handling functions</h2>
             </button>
@@ -68,12 +61,15 @@ function Cproject() {
           </Link>
           <br />
         </div>
-        <button
-          className="btn btn-primary h3 text-dark font-weight-bold w-50 mx-auto my-2"
-          onClick={saveFile}
-        >
-          Downloadable content
-        </button>
+        <div className="col-12 w-50 col-md-6 w-100 mx-auto mb-2">
+        <Link to="/cnotes">
+            <button className="h-2 btn btn-success text-light w-100 text-weight-light">
+              <h2 style={{ color: "white" }}>C notes</h2>
+            </button>
+          </Link>
+        </div>
+        
+       
       </div>
     </div>
   );

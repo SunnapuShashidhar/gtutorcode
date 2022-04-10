@@ -14,9 +14,9 @@ function Guidance() {
   
     <br />
       
-        Registration is not recured for using Blogs and Compiler sections.It Meanes user can read and perform the labs without registraction.
+        Registration is not required for using Blogs and Compiler sections.It Means user can read and perform the labs without registration.
       <br />
-      for community,Add Projects,Write-a-recommendations Registration is required.
+      for community,Add Projects,Write-a-recommendations Registration is mandatory.
         </div>
   
       </div>

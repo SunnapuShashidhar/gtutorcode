@@ -1,7 +1,5 @@
 import React,{ Component } from "react";
 import axios from 'axios';
-
-
 const context=React.createContext();
 
 export class Provider extends Component {
@@ -51,19 +49,19 @@ export class Provider extends Component {
         recommend:[
             {
                 id: 1,
-                name: "M.Kiran kumar",
-                company: "GGC",
-                designation: "Lecturer",
-                email:"kirankpmsc@gmail.com",
-                message: "Smooth interface with good content",
-              },
-              {
-                id: 2,
                 name: "P.Vivek",
                 company: "GGC",
                 designation: "Lecturer",
                 email:"vivekladdu007@gmail.com",
                 message: "Navigation between pages are to good",
+              },
+            {
+                id: 2,
+                name: "M.Kiran kumar",
+                company: "GGC",
+                designation: "Lecturer",
+                email:"kirankpmsc@gmail.com",
+                message: "Smooth interface with good content",
               },
               {
                 id: 3,
@@ -114,6 +112,4 @@ export class Provider extends Component {
     )
 }
 }
-  
-
 export const  Consumer=context.Consumer;
