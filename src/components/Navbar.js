@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../assites/Logo.jpg"
+import "./cssfiles/Navbar.css"
+
 function Navbar(props){
     return(
         <nav className="navbar navbar-expand-sm stick-top bg-dark">
@@ -28,25 +30,23 @@ function Navbar(props){
           </button>
           <div className="collapse navbar-collapse flex-grow-0" id="collapseNav" style={{alignItems:"right"}}>
            <div className="navbar-nav">
-             <Link to="/" className="nav-item nav-link text-warning h6 mx-3">
-               Home
-             </Link>
+           <a href="https://www.onlinegdb.com/online_c_compiler" className="nav-item nav-link text-warning h6 mx-3">
+               Compiler
+             </a>
              <Link to="/community" className="nav-item nav-link h6 mx-3 text-warning">
                Community
              </Link>
-             <Link to="/login" className="nav-item nav-link text-warning h6 mx-3">
-               Login
-             </Link>
+            
              <Link to="/project/add" className="nav-item nav-link text-warning h6 mx-3">
                Add Projects
              </Link>
-             <a href="https://www.onlinegdb.com/online_c_compiler" className="nav-item nav-link text-warning h6 mx-3">
-               Compiler
-             </a>
+            
               <Link to="/downlable" className='nav-item nav-link text-warning h6 mx-3'>
                 Downloads
               </Link>
-            
+              <Link to="/login" className="nav-item nav-link text-warning h6 mx-3">
+               Login
+             </Link>
           
             </div>
            </div> 

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\OneDrive\\Desktop\\edureka"
+		},
+		{
+			"path": "..\\..\\OneDrive\\Desktop\\depeartmentofcs"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\OneDrive\\Desktop\\portfolio"
+		},
+		{
+			"path": "..\\..\\OneDrive\\Desktop\\myportfolio"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

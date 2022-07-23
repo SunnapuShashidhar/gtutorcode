@@ -5,7 +5,11 @@ function Developer() {
   <div className='container'>
 <div className="row">
 <div className="col-12 col-md-6">
-
+    <div className="card">
+      <img src="Logo" alt="" />
+      <div className="card-header">P.vivekanandh</div>
+      <div className="body">letcher in computer science</div>
+    </div>
 </div>
 <div className="col-12 col-md-6">
   

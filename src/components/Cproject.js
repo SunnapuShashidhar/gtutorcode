@@ -1,75 +1,67 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Cbutton from "./CConcepts/Cbutton";
 function Cproject() {
+  const Linkes = [
+    {
+      id: 1,
+      lin: "/historyofC",
+      title: "History of C",
+    },
+    {
+      id: 2,
+      lin: "/algorithm",
+      title: "Algorithm",
+    },
+    {
+      id: 3,
+      lin: "/singledimarray",
+      title: "Single Dim Array",
+    },
+    {
+      id: 4,
+      lin: "/singledimarray",
+      title: "Two dim Array",
+    },
+  ];
+  const Links2 = [
+    {
+      id: 5,
+      lin: "/multdimarray",
+      title: "Multi dim array",
+    },
+    {
+      id: 6,
+      lin: "/stringhandlingjava",
+      title: "String handandling funtion",
+    },
+    {
+      id: 7,
+      lin: "/looping",
+      title: "Lopping Statements",
+    },
+    {
+      id: 8,
+      lin: "/controlstatements",
+      title: "Control statements",
+    },
+  ];
   return (
-    <div className="container justify-content-center pt-5">
+    <div className="container justify-content-center">
       <div className="row d-flex flex-row">
         <div className="col-md-6 d-flex flex-column">
-          <Link to="/historyofC">
-            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>History C</h2>
-            </button>
-          </Link>
-          <br />
-
-          <Link to="/algorithm">
-            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Algorithm</h2>
-            </button>
-          </Link>
-          <br />
-          <Link to="/singledimarray">
-            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Single Dim Array</h2>
-            </button>
-          </Link>
-  
-          <br />
-          <Link to="/singledimarray">
-            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Two dim Array</h2>
-            </button>
-          </Link>
-          
-          <br />
+          {Linkes.map((lin) => (
+            <div key={lin.id} className="">
+              <Cbutton lin={lin} />
+            </div>
+          ))}
         </div>
-         
         <div className="col-md-6 d-flex flex-column">
-        <Link to="/multdimarray">
-            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Multi-dim Array</h2>
-            </button>
-          </Link>
-          <br />
-          <Link to="/stringhandlingjava">
-            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>String handling functions</h2>
-            </button>
-          </Link>
-          
-          <br />
-          <Link to="/looping">
-            <button className="h-2 btn btn-primary text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Looping</h2>
-            </button>
-          </Link>
-          <br />
-          <Link to="/controlstatements">
-            <button className="h-2 btn btn-info text-dark w-100 text-weight-light">
-              <h2 style={{ color: "black" }}>Control statements</h2>
-            </button>
-          </Link>
-          <br />
+          {Links2.map((lin) => (
+            <div key={lin.id} className="">
+              <Cbutton lin={lin} />
+            </div>
+          ))}
         </div>
-        <div className="col-12 w-50 col-md-6 w-100 mx-auto mb-2">
-        <Link to="/cnotes">
-            <button className="h-2 btn btn-success text-light w-100 text-weight-light">
-              <h2 style={{ color: "white" }}>C notes</h2>
-            </button>
-          </Link>
-        </div>
-        
-       
       </div>
     </div>
   );

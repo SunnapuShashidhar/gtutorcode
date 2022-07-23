@@ -1,7 +1,7 @@
 import React from 'react'
 import Fotter from './components/fotter';
 import Navbar from './components/Navbar';
-import {Route,Switch,HashRouter} from 'react-router-dom';
+import {Route,Routes,HashRouter} from 'react-router-dom';
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import { Provider } from './context';
@@ -45,7 +45,7 @@ import Operators from "./components/Cppconcepts/Operators"
 import Passbyvalue from "./components/Cppconcepts/Passbyvalue"
 import Scope from "./components/Cppconcepts/Scope"
 import Typesting from "./components/Cppconcepts/Typesting"
-/**java */
+/*java */
 import Applet from "./components/Java/Applet"
 import Paramtag from "./components/Java/Paramtag";
 import Jvm from "./components/Java/Jvm";
@@ -59,12 +59,15 @@ import Downlable from './components/Downlable';
 import Cppnotes from './components/Cppnotes';
 import Datastru from './components/Datastru';
 import Javanotes from './components/Javanotes';
+
 function App() {
-  return (<Provider>
+  return (
+  <Provider>
  <HashRouter basename='/'>
        <Navbar/>
+       <Homepage/>
         <ScrollToTop/>  
-        <Switch>
+        <Routes>
         <Route exact path="/register" component={Register}/>
          <Route exact path="/" component={Homepage}/>
          <Route exact path="/write-a-recomandation" component={WriteaRecommendation}/>
@@ -85,7 +88,7 @@ function App() {
         <Route exact path="/blog/:id" component={BlogPage}/>
         <Route exact path="/ask-a-question" component={QuestionCommunity}/>
         <Route exact path="/ask-a-solution" component={SolutionCommunity}/>
-        <Route path="/login" component={Login}/>
+        <Route exact path="/login" component={Login}/>
         <Route exact path="/historyofC" component={Histeryofc}/>
         <Route exact path="/algorithm" component={Algorithm}/>
         <Route exact path="/looping" component={Looping}/>
@@ -123,7 +126,7 @@ function App() {
         /**download */
         <Route exact path="/downlable" component={Downlable}/>
          <Route component={NotFound}/>
-       </Switch>
+       </Routes>
      
        <Fotter/>
        </HashRouter>

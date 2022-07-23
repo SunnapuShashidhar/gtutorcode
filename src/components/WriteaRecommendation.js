@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import React, { Component } from 'react';
 import {v4 as uuid} from 'uuid';
 import { Consumer } from '../context';
@@ -20,21 +21,37 @@ import { Consumer } from '../context';
          });
      };
      
-    // onSubmit=async(handler,event)=>{
-        onSubmit=(handler,event)=>{
+    onSubmit=async(handler,event)=>{
+        //onSubmit=(handler,event)=>{
         event.preventDefault();
 
         const newRecomandation={
             id:uuid(),
             name:this.state.name,
+            email:this.state.email,
             company:this.state.company,
             designation:this.state.designation,
             message:this.state.RecommendationsMessage,
         };
+        const responce=await fetch(
+            "https://v1.nocodeapi.com/sunnapushashidhar/google_sheets/PMTHmdeOiGoohHFz?tabId=sheet1",{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                },
+                body:JSON.stringify([[id,name,email,company,designation,new Date().toLocaleString()]]),
+            },
+            
+        );
+        await responce.json();
+
+            //setData({...DataTransfer,id:"",name:"",email:"",company:"",designation:""})
+
        // const responce=await axios.post("http://127.0.0.1:8000/api/recommendations/add",newRecomandation)
         //let isSuccessful=responce.data.isSuccessful;
+
         const isSuccessful=true;
-        const {name}=this.state;
+        const {id,name,email,company,designation}=this.state;
         if (isSuccessful){
             this.setState({
                 submitMessage:`Thanks ${name} .our team will contact you soon`,
@@ -56,6 +73,7 @@ import { Consumer } from '../context';
     render() {
        return(
            <Consumer>
+            
                {(value)=>{
                     const { submitMessageTextColor, submitMessage } = this.state;
                     const {handler}=value;

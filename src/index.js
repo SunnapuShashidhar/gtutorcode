@@ -7,4 +7,3 @@ import "bootstrap/dist/js/bootstrap.min.js";
 ReactDOM.render(<App />,document.getElementById('root')
 );
 reportWebVitals();
-
