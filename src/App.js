@@ -1,7 +1,7 @@
 import React from 'react'
 import Fotter from './components/fotter';
 import Navbar from './components/Navbar';
-import {Route,Routes,HashRouter} from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import { Provider } from './context';
@@ -63,11 +63,10 @@ import Javanotes from './components/Javanotes';
 function App() {
   return (
   <Provider>
- <HashRouter basename='/'>
-       <Navbar/>
-       <Homepage/>
+      <BrowserRouter basename='/'>
+        <Navbar />
         <ScrollToTop/>  
-        <Routes>
+        <Switch>
         <Route exact path="/register" component={Register}/>
          <Route exact path="/" component={Homepage}/>
          <Route exact path="/write-a-recomandation" component={WriteaRecommendation}/>
@@ -75,7 +74,7 @@ function App() {
          <Route exact path="/community"component={Community}/>
          <Route exact path="/AllProject"component={AllProject}/>
         <Route exact path="/project/add"component={ProjectAdd}/>
-        <Route exact path="/blogs" component={Blogs}/>
+          <Route path="/blogs" component={Blogs} />
         <Route exact path="/request" component={Request}/>
         <Route exact path="/project/:id" component={ProjectPage} />
         <Route exact path="/Guidelines" component={Guidance}/>
@@ -126,10 +125,10 @@ function App() {
         /**download */
         <Route exact path="/downlable" component={Downlable}/>
          <Route component={NotFound}/>
-       </Routes>
+        </Switch>
      
        <Fotter/>
-       </HashRouter>
+      </BrowserRouter>
   </Provider>
       
   );
